@@ -1,0 +1,708 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`API test should get a genome by accession 1`] = `
+Object {
+  "data": Object {
+    "getGenomebyAccession": Object {
+      "_id": "NW_007931121",
+      "assembly_info": Object {
+        "assembly_accession": "GCF_000001215.4",
+        "ftp_rpt": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/215/GCF_000001215.4_Release_6_plus_ISO1_MT/GCF_000001215.4_Release_6_plus_ISO1_MT_assembly_report.txt",
+        "submitter": "The FlyBase Consortium/Berkeley Drosophila Genome Project/Celera Genomics",
+        "taxid": "7227",
+      },
+      "bioproject_info": Object {
+        "project_accession": "PRJNA164",
+        "project_description": "The NCBI reference sequence (RefSeq) for the D. melanogaster genome is based on the annotated genome submission from the FlyBase Consortium. The genome can be viewed in NCBI's Map Viewer browser. The RefSeq records incorporate some additional name information that is separately provided by FlyBase.    For additional information, please see the RefSeq chapter in the NCBI Handbook.",
+        "project_name": "Drosophila melanogaster strain:y; cn bw sp",
+        "project_target_material": "Genome",
+        "project_title": "Reference sequences (RefSeq) of the Drosophila melanogaster genome",
+        "project_type": "Primary submission",
+        "submitter": "NCBI",
+        "supergroup": "Eukaryotes",
+      },
+      "biosample_info": Object {
+        "accession": "SAMN02803731",
+        "organism": "Drosophila melanogaster",
+        "publication_date": "2014/07/23",
+        "title": "iso-1",
+      },
+      "definition": "Drosophila melanogaster chromosome X; Y rDNA sequence.",
+      "features": Array [
+        Object {
+          "gene": "5.8SrRNA-Psi:CR45849",
+          "key": "gene",
+          "location": "<16375..>16497",
+          "locus_tag": "Dmel_CR45849",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "5.8SrRNA-Psi:CR45849",
+          "key": "rRNA",
+          "location": "<16375..>16497",
+          "locus_tag": "Dmel_CR45849",
+          "product": "5.8S ribosomal RNA pseudogene",
+          "translation": null,
+        },
+        Object {
+          "gene": "2SrRNA-Psi:CR45850",
+          "key": "gene",
+          "location": "16526..16555",
+          "locus_tag": "Dmel_CR45850",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "2SrRNA-Psi:CR45850",
+          "key": "rRNA",
+          "location": "16526..16555",
+          "locus_tag": "Dmel_CR45850",
+          "product": "2S ribosomal RNA pseudogene",
+          "translation": null,
+        },
+        Object {
+          "gene": "28SrRNA-Psi:CR40596",
+          "key": "gene",
+          "location": "<16936..>22940",
+          "locus_tag": "Dmel_CR40596",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "28SrRNA-Psi:CR40596",
+          "key": "rRNA",
+          "location": "join(<16936..19585,22816..>22940)",
+          "locus_tag": "Dmel_CR40596",
+          "product": "28S ribosomal RNA pseudogene",
+          "translation": null,
+        },
+        Object {
+          "gene": "28SrRNA-Psi:CR45851",
+          "key": "gene",
+          "location": "<35941..>38740",
+          "locus_tag": "Dmel_CR45851",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "28SrRNA-Psi:CR45851",
+          "key": "rRNA",
+          "location": "join(<35941..36403,37483..>38740)",
+          "locus_tag": "Dmel_CR45851",
+          "product": "28S ribosomal RNA pseudogene",
+          "translation": null,
+        },
+        Object {
+          "gene": "pre-rRNA:CR45845",
+          "key": "gene",
+          "location": "42623..49485",
+          "locus_tag": "Dmel_CR45845",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "pre-rRNA:CR45845",
+          "key": "precursor_RNA",
+          "location": "42623..49485",
+          "locus_tag": "Dmel_CR45845",
+          "product": "pre-ribosomal RNA",
+          "translation": null,
+        },
+        Object {
+          "gene": "18SrRNA:CR41548",
+          "key": "gene",
+          "location": "43484..45478",
+          "locus_tag": "Dmel_CR41548",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "18SrRNA:CR41548",
+          "key": "rRNA",
+          "location": "43484..45478",
+          "locus_tag": "Dmel_CR41548",
+          "product": "18S ribosomal RNA",
+          "translation": null,
+        },
+        Object {
+          "gene": "mir-10404-1",
+          "key": "gene",
+          "location": "46106..46174",
+          "locus_tag": "Dmel_CR46346",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "mir-10404-1",
+          "key": "precursor_RNA",
+          "location": "46106..46174",
+          "locus_tag": "Dmel_CR46346",
+          "product": "mir-10404-1 precursor RNA",
+          "translation": null,
+        },
+        Object {
+          "gene": "mir-10404-1",
+          "key": "ncRNA",
+          "location": "46113..46134",
+          "locus_tag": "Dmel_CR46346",
+          "product": "mir-10404-1-RA",
+          "translation": null,
+        },
+        Object {
+          "gene": "mir-10404-1",
+          "key": "ncRNA",
+          "location": "46146..46167",
+          "locus_tag": "Dmel_CR46346",
+          "product": "mir-10404-1-RB",
+          "translation": null,
+        },
+      ],
+      "gId": "669633252",
+      "pubmed_info": Array [
+        Object {
+          "pub_date": "2015 Jun 24",
+          "pub_type": "Journal Article",
+          "source": "G3 (Bethesda)",
+          "title": "Gene Model Annotations for Drosophila melanogaster: Impact of High-Throughput Data.",
+        },
+        Object {
+          "pub_date": "2015 Jun 24",
+          "pub_type": "Journal Article",
+          "source": "G3 (Bethesda)",
+          "title": "Gene Model Annotations for Drosophila melanogaster: The Rule-Benders.",
+        },
+        Object {
+          "pub_date": "2015 Mar",
+          "pub_type": "Journal Article",
+          "source": "Genome Res",
+          "title": "The Release 6 reference sequence of the Drosophila melanogaster genome.",
+        },
+        Object {
+          "pub_date": "2007 Jun 15",
+          "pub_type": "Journal Article",
+          "source": "Science",
+          "title": "Sequence finishing and mapping of Drosophila melanogaster heterochromatin.",
+        },
+        Object {
+          "pub_date": "2007 Jun 15",
+          "pub_type": "Journal Article",
+          "source": "Science",
+          "title": "The Release 5.1 annotation of Drosophila melanogaster heterochromatin.",
+        },
+        Object {
+          "pub_date": "2005 Jul",
+          "pub_type": "Journal Article",
+          "source": "PLoS Comput Biol",
+          "title": "Combined evidence annotation of transposable elements in genome sequences.",
+        },
+        Object {
+          "pub_date": "2002",
+          "pub_type": "Journal Article",
+          "source": "Genome Biol",
+          "title": "Heterochromatic sequences in a Drosophila whole-genome shotgun assembly.",
+        },
+        Object {
+          "pub_date": "2002",
+          "pub_type": "Journal Article",
+          "source": "Genome Biol",
+          "title": "The transposable elements of the Drosophila melanogaster euchromatin: a genomics perspective.",
+        },
+        Object {
+          "pub_date": "2002",
+          "pub_type": "Journal Article",
+          "source": "Genome Biol",
+          "title": "Annotation of the Drosophila melanogaster euchromatic genome: a systematic review.",
+        },
+        Object {
+          "pub_date": "2002",
+          "pub_type": "Journal Article",
+          "source": "Genome Biol",
+          "title": "Finishing a whole-genome shotgun: release 3 of the Drosophila melanogaster euchromatic genome sequence.",
+        },
+        Object {
+          "pub_date": "2000 Mar 24",
+          "pub_type": "Journal Article",
+          "source": "Science",
+          "title": "The genome sequence of Drosophila melanogaster.",
+        },
+      ],
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`API test should get a genome by assembly 1`] = `
+Object {
+  "data": Object {
+    "getGenomebyAssembly": Object {
+      "_id": "NW_007931121",
+      "assembly_info": Object {
+        "assembly_accession": "GCF_000001215.4",
+        "ftp_rpt": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/215/GCF_000001215.4_Release_6_plus_ISO1_MT/GCF_000001215.4_Release_6_plus_ISO1_MT_assembly_report.txt",
+        "submitter": "The FlyBase Consortium/Berkeley Drosophila Genome Project/Celera Genomics",
+        "taxid": "7227",
+      },
+      "bioproject_info": Object {
+        "project_accession": "PRJNA164",
+        "project_description": "The NCBI reference sequence (RefSeq) for the D. melanogaster genome is based on the annotated genome submission from the FlyBase Consortium. The genome can be viewed in NCBI's Map Viewer browser. The RefSeq records incorporate some additional name information that is separately provided by FlyBase.    For additional information, please see the RefSeq chapter in the NCBI Handbook.",
+        "project_name": "Drosophila melanogaster strain:y; cn bw sp",
+        "project_target_material": "Genome",
+        "project_title": "Reference sequences (RefSeq) of the Drosophila melanogaster genome",
+        "project_type": "Primary submission",
+        "submitter": "NCBI",
+        "supergroup": "Eukaryotes",
+      },
+      "biosample_info": Object {
+        "accession": "SAMN02803731",
+        "organism": "Drosophila melanogaster",
+        "publication_date": "2014/07/23",
+        "title": "iso-1",
+      },
+      "definition": "Drosophila melanogaster chromosome X; Y rDNA sequence.",
+      "features": Array [
+        Object {
+          "gene": "5.8SrRNA-Psi:CR45849",
+          "key": "gene",
+          "location": "<16375..>16497",
+          "locus_tag": "Dmel_CR45849",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "5.8SrRNA-Psi:CR45849",
+          "key": "rRNA",
+          "location": "<16375..>16497",
+          "locus_tag": "Dmel_CR45849",
+          "product": "5.8S ribosomal RNA pseudogene",
+          "translation": null,
+        },
+        Object {
+          "gene": "2SrRNA-Psi:CR45850",
+          "key": "gene",
+          "location": "16526..16555",
+          "locus_tag": "Dmel_CR45850",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "2SrRNA-Psi:CR45850",
+          "key": "rRNA",
+          "location": "16526..16555",
+          "locus_tag": "Dmel_CR45850",
+          "product": "2S ribosomal RNA pseudogene",
+          "translation": null,
+        },
+        Object {
+          "gene": "28SrRNA-Psi:CR40596",
+          "key": "gene",
+          "location": "<16936..>22940",
+          "locus_tag": "Dmel_CR40596",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "28SrRNA-Psi:CR40596",
+          "key": "rRNA",
+          "location": "join(<16936..19585,22816..>22940)",
+          "locus_tag": "Dmel_CR40596",
+          "product": "28S ribosomal RNA pseudogene",
+          "translation": null,
+        },
+        Object {
+          "gene": "28SrRNA-Psi:CR45851",
+          "key": "gene",
+          "location": "<35941..>38740",
+          "locus_tag": "Dmel_CR45851",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "28SrRNA-Psi:CR45851",
+          "key": "rRNA",
+          "location": "join(<35941..36403,37483..>38740)",
+          "locus_tag": "Dmel_CR45851",
+          "product": "28S ribosomal RNA pseudogene",
+          "translation": null,
+        },
+        Object {
+          "gene": "pre-rRNA:CR45845",
+          "key": "gene",
+          "location": "42623..49485",
+          "locus_tag": "Dmel_CR45845",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "pre-rRNA:CR45845",
+          "key": "precursor_RNA",
+          "location": "42623..49485",
+          "locus_tag": "Dmel_CR45845",
+          "product": "pre-ribosomal RNA",
+          "translation": null,
+        },
+        Object {
+          "gene": "18SrRNA:CR41548",
+          "key": "gene",
+          "location": "43484..45478",
+          "locus_tag": "Dmel_CR41548",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "18SrRNA:CR41548",
+          "key": "rRNA",
+          "location": "43484..45478",
+          "locus_tag": "Dmel_CR41548",
+          "product": "18S ribosomal RNA",
+          "translation": null,
+        },
+        Object {
+          "gene": "mir-10404-1",
+          "key": "gene",
+          "location": "46106..46174",
+          "locus_tag": "Dmel_CR46346",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "mir-10404-1",
+          "key": "precursor_RNA",
+          "location": "46106..46174",
+          "locus_tag": "Dmel_CR46346",
+          "product": "mir-10404-1 precursor RNA",
+          "translation": null,
+        },
+        Object {
+          "gene": "mir-10404-1",
+          "key": "ncRNA",
+          "location": "46113..46134",
+          "locus_tag": "Dmel_CR46346",
+          "product": "mir-10404-1-RA",
+          "translation": null,
+        },
+        Object {
+          "gene": "mir-10404-1",
+          "key": "ncRNA",
+          "location": "46146..46167",
+          "locus_tag": "Dmel_CR46346",
+          "product": "mir-10404-1-RB",
+          "translation": null,
+        },
+      ],
+      "gId": "669633252",
+      "pubmed_info": Array [
+        Object {
+          "pub_date": "2015 Jun 24",
+          "pub_type": "Journal Article",
+          "source": "G3 (Bethesda)",
+          "title": "Gene Model Annotations for Drosophila melanogaster: Impact of High-Throughput Data.",
+        },
+        Object {
+          "pub_date": "2015 Jun 24",
+          "pub_type": "Journal Article",
+          "source": "G3 (Bethesda)",
+          "title": "Gene Model Annotations for Drosophila melanogaster: The Rule-Benders.",
+        },
+        Object {
+          "pub_date": "2015 Mar",
+          "pub_type": "Journal Article",
+          "source": "Genome Res",
+          "title": "The Release 6 reference sequence of the Drosophila melanogaster genome.",
+        },
+        Object {
+          "pub_date": "2007 Jun 15",
+          "pub_type": "Journal Article",
+          "source": "Science",
+          "title": "Sequence finishing and mapping of Drosophila melanogaster heterochromatin.",
+        },
+        Object {
+          "pub_date": "2007 Jun 15",
+          "pub_type": "Journal Article",
+          "source": "Science",
+          "title": "The Release 5.1 annotation of Drosophila melanogaster heterochromatin.",
+        },
+        Object {
+          "pub_date": "2005 Jul",
+          "pub_type": "Journal Article",
+          "source": "PLoS Comput Biol",
+          "title": "Combined evidence annotation of transposable elements in genome sequences.",
+        },
+        Object {
+          "pub_date": "2002",
+          "pub_type": "Journal Article",
+          "source": "Genome Biol",
+          "title": "Heterochromatic sequences in a Drosophila whole-genome shotgun assembly.",
+        },
+        Object {
+          "pub_date": "2002",
+          "pub_type": "Journal Article",
+          "source": "Genome Biol",
+          "title": "The transposable elements of the Drosophila melanogaster euchromatin: a genomics perspective.",
+        },
+        Object {
+          "pub_date": "2002",
+          "pub_type": "Journal Article",
+          "source": "Genome Biol",
+          "title": "Annotation of the Drosophila melanogaster euchromatic genome: a systematic review.",
+        },
+        Object {
+          "pub_date": "2002",
+          "pub_type": "Journal Article",
+          "source": "Genome Biol",
+          "title": "Finishing a whole-genome shotgun: release 3 of the Drosophila melanogaster euchromatic genome sequence.",
+        },
+        Object {
+          "pub_date": "2000 Mar 24",
+          "pub_type": "Journal Article",
+          "source": "Science",
+          "title": "The genome sequence of Drosophila melanogaster.",
+        },
+      ],
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`API test should get a genome by locus 1`] = `
+Object {
+  "data": Object {
+    "getGenomebyLocus": Object {
+      "_id": "NW_007931121",
+      "assembly_info": Object {
+        "assembly_accession": "GCF_000001215.4",
+        "ftp_rpt": "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/215/GCF_000001215.4_Release_6_plus_ISO1_MT/GCF_000001215.4_Release_6_plus_ISO1_MT_assembly_report.txt",
+        "submitter": "The FlyBase Consortium/Berkeley Drosophila Genome Project/Celera Genomics",
+        "taxid": "7227",
+      },
+      "bioproject_info": Object {
+        "project_accession": "PRJNA164",
+        "project_description": "The NCBI reference sequence (RefSeq) for the D. melanogaster genome is based on the annotated genome submission from the FlyBase Consortium. The genome can be viewed in NCBI's Map Viewer browser. The RefSeq records incorporate some additional name information that is separately provided by FlyBase.    For additional information, please see the RefSeq chapter in the NCBI Handbook.",
+        "project_name": "Drosophila melanogaster strain:y; cn bw sp",
+        "project_target_material": "Genome",
+        "project_title": "Reference sequences (RefSeq) of the Drosophila melanogaster genome",
+        "project_type": "Primary submission",
+        "submitter": "NCBI",
+        "supergroup": "Eukaryotes",
+      },
+      "biosample_info": Object {
+        "accession": "SAMN02803731",
+        "organism": "Drosophila melanogaster",
+        "publication_date": "2014/07/23",
+        "title": "iso-1",
+      },
+      "definition": "Drosophila melanogaster chromosome X; Y rDNA sequence.",
+      "features": Array [
+        Object {
+          "gene": "5.8SrRNA-Psi:CR45849",
+          "key": "gene",
+          "location": "<16375..>16497",
+          "locus_tag": "Dmel_CR45849",
+          "product": null,
+          "translation": null,
+        },
+        Object {
+          "gene": "5.8SrRNA-Psi:CR45849",
+          "key": "rRNA",
+          "location": "<16375..>16497",
+          "locus_tag": "Dmel_CR45849",
+          "product": "5.8S ribosomal RNA pseudogene",
+          "translation": null,
+        },
+      ],
+      "gId": "669633252",
+      "pubmed_info": Array [
+        Object {
+          "pub_date": "2015 Jun 24",
+          "pub_type": "Journal Article",
+          "source": "G3 (Bethesda)",
+          "title": "Gene Model Annotations for Drosophila melanogaster: Impact of High-Throughput Data.",
+        },
+        Object {
+          "pub_date": "2015 Jun 24",
+          "pub_type": "Journal Article",
+          "source": "G3 (Bethesda)",
+          "title": "Gene Model Annotations for Drosophila melanogaster: The Rule-Benders.",
+        },
+        Object {
+          "pub_date": "2015 Mar",
+          "pub_type": "Journal Article",
+          "source": "Genome Res",
+          "title": "The Release 6 reference sequence of the Drosophila melanogaster genome.",
+        },
+        Object {
+          "pub_date": "2007 Jun 15",
+          "pub_type": "Journal Article",
+          "source": "Science",
+          "title": "Sequence finishing and mapping of Drosophila melanogaster heterochromatin.",
+        },
+        Object {
+          "pub_date": "2007 Jun 15",
+          "pub_type": "Journal Article",
+          "source": "Science",
+          "title": "The Release 5.1 annotation of Drosophila melanogaster heterochromatin.",
+        },
+        Object {
+          "pub_date": "2005 Jul",
+          "pub_type": "Journal Article",
+          "source": "PLoS Comput Biol",
+          "title": "Combined evidence annotation of transposable elements in genome sequences.",
+        },
+        Object {
+          "pub_date": "2002",
+          "pub_type": "Journal Article",
+          "source": "Genome Biol",
+          "title": "Heterochromatic sequences in a Drosophila whole-genome shotgun assembly.",
+        },
+        Object {
+          "pub_date": "2002",
+          "pub_type": "Journal Article",
+          "source": "Genome Biol",
+          "title": "The transposable elements of the Drosophila melanogaster euchromatin: a genomics perspective.",
+        },
+        Object {
+          "pub_date": "2002",
+          "pub_type": "Journal Article",
+          "source": "Genome Biol",
+          "title": "Annotation of the Drosophila melanogaster euchromatic genome: a systematic review.",
+        },
+        Object {
+          "pub_date": "2002",
+          "pub_type": "Journal Article",
+          "source": "Genome Biol",
+          "title": "Finishing a whole-genome shotgun: release 3 of the Drosophila melanogaster euchromatic genome sequence.",
+        },
+        Object {
+          "pub_date": "2000 Mar 24",
+          "pub_type": "Journal Article",
+          "source": "Science",
+          "title": "The genome sequence of Drosophila melanogaster.",
+        },
+      ],
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`API test should get a genome not found error using accession 1`] = `
+Object {
+  "data": Object {
+    "getGenomebyAccession": null,
+  },
+  "errors": Array [
+    [GraphQLError: Genome not found],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`API test should get a genome not found error using assembly 1`] = `
+Object {
+  "data": Object {
+    "getGenomebyAssembly": null,
+  },
+  "errors": Array [
+    [GraphQLError: Genome not found],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`API test should get a genome not found error using locus 1`] = `
+Object {
+  "data": Object {
+    "getGenomebyLocus": null,
+  },
+  "errors": Array [
+    [GraphQLError: Genome not found],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`API test should get a genome not found in db but being processed error using accession 1`] = `
+Object {
+  "data": Object {
+    "getGenomebyAccession": null,
+  },
+  "errors": Array [
+    [GraphQLError: Genome not found in db but being processed],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`API test should get a genome not found in db but being processed error using assembly 1`] = `
+Object {
+  "data": Object {
+    "getGenomebyAssembly": null,
+  },
+  "errors": Array [
+    [GraphQLError: Genome not found in db but being processed],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`API test should get a genome not found in db but being processed error using locus 1`] = `
+Object {
+  "data": Object {
+    "getGenomebyLocus": null,
+  },
+  "errors": Array [
+    [GraphQLError: Genome not found in db but being processed],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

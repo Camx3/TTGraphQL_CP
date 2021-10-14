@@ -1,0 +1,53 @@
+{
+  "name": "graphql-api",
+  "version": "1.0.0",
+  "description": "A GraphQL API for ncbi genomes data",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon ./src/index.ts -L --exec ts-node",
+    "build": "rimraf ./build && tsc",
+    "start": "node ./build/index.js",
+    "test": "jest --watch",
+    "coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "cparra",
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^1.1.5",
+    "@types/helmet": "0.0.46",
+    "@types/ioredis": "^4.26.7",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.5",
+    "@types/redis": "^2.8.31",
+    "apollo-server-testing": "^2.13.1",
+    "jest": "^26.0.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^25.5.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@type-cacheable/core": "^10.0.1",
+    "@type-cacheable/redis-adapter": "^10.0.1",
+    "@typegoose/typegoose": "^7.0.0",
+    "@types/mongoose": "^5.7.16",
+    "apollo-server-express": "^2.13.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "class-validator": "^0.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.0.0",
+    "helmet": "^3.22.0",
+    "ioredis": "^4.27.8",
+    "mongoose": "^5.9.13",
+    "nodemon": "^2.0.13",
+    "python-shell": "^3.0.0",
+    "redis": "^3.1.2",
+    "reflect-metadata": "^0.1.13",
+    "tedis": "^0.1.12",
+    "type-graphql": "^1.0.0-rc.1",
+    "typedi": "^0.8.0"
+  }
+}
