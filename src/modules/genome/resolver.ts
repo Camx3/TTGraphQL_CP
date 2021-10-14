@@ -76,7 +76,7 @@ export default class GenomeResolver {
     }
     
     let t1 = performance.now()  
-    console.log("Tiempo de respuesta para obtener gen " + (t1-t0) + " milisegundos")
+    //console.log("Tiempo de respuesta para obtener gen " + (t1-t0) + " milisegundos")
     return genome;
   }
 
@@ -132,7 +132,7 @@ export default class GenomeResolver {
     }
     
     let t1 = performance.now()  
-    console.log("Tiempo de respuesta para obtener gen " + (t1-t0) + " milisegundos")
+    //console.log("Tiempo de respuesta para obtener gen " + (t1-t0) + " milisegundos")
     return genome;
   }
 
@@ -287,7 +287,7 @@ export default class GenomeResolver {
     }
     
     let t1 = performance.now()
-    console.log("Tiempo de respuesta para obtener gen " + (t1-t0) + " milisegundos")
+    //console.log("Tiempo de respuesta para obtener gen " + (t1-t0) + " milisegundos")
     return genome;
   }
 
@@ -298,7 +298,7 @@ export default class GenomeResolver {
     if(genome.assembly_link){
       const info = await this.genomeService.getAssemblyInfo(genome.assembly_link);
       let t1 = performance.now()
-      console.log("Tiempo de respuesta para obtener assemblyInfo " + (t1-t0) + " milisegundos")
+      //console.log("Tiempo de respuesta para obtener assemblyInfo " + (t1-t0) + " milisegundos")
       return info;
     }
     else{
@@ -313,7 +313,7 @@ export default class GenomeResolver {
     if(genome.bioproject_link){
       const info = await this.genomeService.getBioprojectInfo(genome.bioproject_link);
       let t1 = performance.now()
-      console.log("Tiempo de respuesta para obtener bioproject info " + (t1-t0) + " milisegundos")
+      //console.log("Tiempo de respuesta para obtener bioproject info " + (t1-t0) + " milisegundos")
       return info;
     }
     else{
@@ -328,7 +328,7 @@ export default class GenomeResolver {
     if(genome.biosample_link){
       const info = await this.genomeService.getBiosampleInfo(genome.biosample_link);
       let t1 = performance.now()
-      console.log("Tiempo de respuesta para obtener biosample info " + (t1-t0) + " milisegundos")
+      //console.log("Tiempo de respuesta para obtener biosample info " + (t1-t0) + " milisegundos")
       return info;
     }
     else{
@@ -343,7 +343,7 @@ export default class GenomeResolver {
     if(genome.pubmedIds){
       const info = await this.genomeService.getPubmedInfo(genome.pubmedIds);
       let t1 = performance.now()
-      console.log("Tiempo de respuesta para obtener pubmed info " + (t1-t0) + " milisegundos")
+      //console.log("Tiempo de respuesta para obtener pubmed info " + (t1-t0) + " milisegundos")
       return info;
     }
     else{
