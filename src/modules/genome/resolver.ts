@@ -77,6 +77,7 @@ export default class GenomeResolver {
     
     let t1 = performance.now()  
     //console.log("Tiempo de respuesta para obtener gen " + (t1-t0) + " milisegundos")
+    //console.log("largo features: " ,genome?.features.length);
     return genome;
   }
 
@@ -87,10 +88,9 @@ export default class GenomeResolver {
     @Arg("locus_end") locus_end: string,) {
     let t0 = performance.now()
     if(assembly_accession === "" || (locus_start==="" && locus_end === "")){
-      throw new ApolloError('Assembly accesion and at least one locus tag should be in the parameters','EMPTY_PARAMETER');
-      return null;
+      throw new ApolloError('Assembly accesion and locus tags should be in the parameters','EMPTY_PARAMETER');
     }
-    const [genome,status] = await this.genomeService.getByAssembly(assembly_accession, locus_start!== ""?locus_start:locus_end);
+    const [genome,status] = await this.genomeService.getByAssembly(assembly_accession, locus_start, locus_end);
 
     if(genome){
       var start_index: number = -1;
@@ -132,7 +132,8 @@ export default class GenomeResolver {
     }
     
     let t1 = performance.now()  
-    //console.log("Tiempo de respuesta para obtener gen " + (t1-t0) + " milisegundos")
+    //console.log("Tiempo de respuesta para obtener gen " + (t1-t0) + " milisegundos");
+    //console.log("largo features: " ,genome?.features.length);
     return genome;
   }
 
@@ -149,7 +150,7 @@ export default class GenomeResolver {
     var locus_first_index = -1;
     var locus_last_index = -1;
     let t0 = performance.now()
-    const [genome,status] = assembly_acc? await this.genomeService.getByAssembly(assembly_acc,locus_tag) :await this.genomeService.getByLocus(locus_tag)
+    const [genome,status] = assembly_acc? await this.genomeService.getByAssembly(assembly_acc,locus_tag,locus_tag) :await this.genomeService.getByLocus(locus_tag)
     let isIndexReady = false;
     if(genome){
       genome.features.forEach((value,index) =>{
@@ -288,6 +289,7 @@ export default class GenomeResolver {
     
     let t1 = performance.now()
     //console.log("Tiempo de respuesta para obtener gen " + (t1-t0) + " milisegundos")
+    //console.log("largo features: " ,genome?.features.length);
     return genome;
   }
 
@@ -344,6 +346,7 @@ export default class GenomeResolver {
       const info = await this.genomeService.getPubmedInfo(genome.pubmedIds);
       let t1 = performance.now()
       //console.log("Tiempo de respuesta para obtener pubmed info " + (t1-t0) + " milisegundos")
+      //console.log("cantidad publicaciones: " ,genome.pubmedIds.length);
       return info;
     }
     else{

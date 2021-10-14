@@ -76,7 +76,7 @@ export default class GenomeService {
     return [genome,status];
   }
 
-  public async getByAssembly(assembly_accession: string,locus_tag: string): Promise<[Genome | null, string]>{
+  public async getByAssembly(assembly_accession: string,locus_start: string,locus_end: string): Promise<[Genome | null, string]>{
     assembly_accession = assembly_accession.toUpperCase();
     var genome: Genome| null = null;
     var status: string = "1";
@@ -88,7 +88,7 @@ export default class GenomeService {
         await axios.get(esummaryUrl).then(async (response) =>{
           const bioprojectaccn = response.data.result[esearchIdList[0]].gb_bioprojects[0].bioprojectaccn;
           const biosampleaccn = response.data.result[esearchIdList[0]].biosampleaccn;
-          const nuccoreSearchUrl = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nuccore&term="+assembly_accession+"%20OR%20"+bioprojectaccn+"%20OR%20"+biosampleaccn+"%20AND%20"+locus_tag+"&retmode=json";
+          const nuccoreSearchUrl = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nuccore&term="+assembly_accession+"%20OR%20"+bioprojectaccn+"%20OR%20"+biosampleaccn+"%20AND%20"+locus_start+"%20AND%20"+locus_end+"&retmode=json";
           await axios.get(nuccoreSearchUrl).then(async (response)=>{
             const nuccoreIdList = response.data.esearchresult.idlist;
             if( nuccoreIdList.length !== 0){
