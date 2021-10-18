@@ -1,6 +1,6 @@
 #stage1
 FROM node as builder
-WORKDIR /usr/app
+WORKDIR ../app
 COPY package*.json ./
 COPY requirements.txt ./
 RUN npm install
@@ -8,7 +8,7 @@ COPY . .
 RUN npm run build
 #stage 2
 FROM node
-WORKDIR /usr/app
+WORKDIR ../app
 COPY package*.json ./
 ADD python-utils ./python-utils/
 COPY requirements.txt ./
