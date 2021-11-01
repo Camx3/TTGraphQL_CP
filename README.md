@@ -51,7 +51,6 @@ Disclaimer: https://www.ncbi.nlm.nih.gov/home/about/policies/
 ## How to use
 
 - Duplicate the `.env.example` file and rename it `.env`
-- Change the `pythonScriptPath` value in `src/modules/genome/service.ts` for the full path to the `python-utils` folder.
 - Run `npm install`
 
 #### Start mongoDB with docker-compose
