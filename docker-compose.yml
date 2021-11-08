@@ -20,9 +20,6 @@ services:
     depends_on:
       - mongodb
       - redis
-    links:
-      - mongodb
-      - redis
   # MongoDB container
   mongodb:
     image: "mongo:latest"
