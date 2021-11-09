@@ -12,10 +12,10 @@ services:
       - PORT=4002
       - GRAPHQL_PATH=/graphql
       - NODE_ENV=${NODE_ENV}
-      - REDIS_PORT=6379
-      - REDIS_HOST=redis
+      - REDIS_PORT=${REDIS_PORT}
+      - REDIS_HOST=${REDIS_HOST}
       - REDIS_PASSWORD=${REDIS_PASSWORD}
-      - MONGODB_URI=mongodb://test:${MONGODB_PASSWORD}@mongodb:27017/ncbi
+      - MONGODB_URI=mongodb://${MONGODB_INIT_USER}:${MONGODB_PASSWORD}@mongodb:27017/${MONGODB_INIT_DB}
     env_file: .env
     depends_on:
       - mongodb
