@@ -7,6 +7,7 @@ Disclaimer: https://www.ncbi.nlm.nih.gov/home/about/policies/
 - NodeJS and TypeScript
 - GraphQL with Apollo Server and Type GraphQL
 - MongoDB Database integrated with Mongoose/TypeGoose
+- Redis for cache.
 - Jest for testing
 - Docker 
 
