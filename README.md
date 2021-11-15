@@ -27,6 +27,7 @@ Disclaimer: https://www.ncbi.nlm.nih.gov/home/about/policies/
 │
 ├── jest-mongodb-config.js     
 ├── jest.config.js             # Jest configuration
+├── mongo-init.js              # Initialization script for database and mongo user.
 ├── docker-compose.yml         # Docker compose configuration 
 ├── .env.example               # Example of what your .env file should look like
 ├── .gitignore                 # Standard gitignore file
@@ -48,14 +49,15 @@ Disclaimer: https://www.ncbi.nlm.nih.gov/home/about/policies/
 │           └── service.ts     # Business logic of your app
 ```
 
-## How to use
+## How to use node application
 
 - Duplicate the `.env.example` file and rename it `.env`
 - Run `npm install`
 
-#### Start mongoDB with docker-compose
+#### Start application with docker-compose
 
 - Make sure you have docker installed on your machine
+- Change the environment variables `REDIS_PASSWORD` , `MONGO_DB` , `MONGO_USER`, `MONGODB_PASSWORD`. If changes are made to the Mongo variables, `MONGODB_URI` must be changed with the corresponding credentials and at the same time the `mongo-init.sh` script must be modified with the corresponding credentials, which are the `MONGO_DB` database, the `MONGO_USER` user and its `MONGODB_PASSWORD` password.
 - Run `docker-compose up` to start the containers
 - Run `docker-compose down` to remove the running containers
 
@@ -75,7 +77,7 @@ Disclaimer: https://www.ncbi.nlm.nih.gov/home/about/policies/
 
 - Run 'npm test'
 
-> Integration tests are done with Jest, Apollo Server Testing and MongoDB Memory Server. This way every test are testing our entire logic with every graphQL request, from our resolvers to our models!
+> Integration tests are done with Jest, Apollo Server Testing and MongoDB Memory Server.
 
 #### Access to the GraphQL Playground (Dev only)
 
