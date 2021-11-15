@@ -1,4 +1,3 @@
-version: "3"
 services:
   app:
     container_name: graphql-app
@@ -15,7 +14,7 @@ services:
       - REDIS_PORT=${REDIS_PORT}
       - REDIS_HOST=${REDIS_HOST}
       - REDIS_PASSWORD=${REDIS_PASSWORD}
-      - MONGODB_URI=mongodb://${MONGODB_INIT_USER}:${MONGODB_PASSWORD}@mongodb:27017/${MONGODB_INIT_DB}
+      - MONGODB_URI=mongodb://${MONGODB_USER}:${MONGODB_PASSWORD}@mongodb:27017/${MONGODB_DB}
     env_file: .env
     depends_on:
       - mongodb
@@ -28,8 +27,10 @@ services:
       - graphql-app-network
     env_file: .env
     environment:
-      - MONGO_INITDB_DATABASE=${MONGODB_INIT_DB}
-      - MONGO_INITDB_ROOT_USERNAME=${MONGODB_USER}
+      - MONGO_USER=${MONGODB_USER}
+      - MONGO_PASSWORD=${MONGODB_PASSWORD}
+      - MONGO_INITDB_DATABASE=${MONGODB_DB}
+      - MONGO_INITDB_ROOT_USERNAME=${MONGODB_INIT_USER}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGODB_PASSWORD}
     ports:
       - "27017:27017"
@@ -45,9 +46,7 @@ services:
       - graphql-app-network
     ports:
       - "6379:6379"
-    volumes:
-      - ./data/redis_data:/data
-    entrypoint: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
+    entrypoint: redis-server --requirepass ${REDIS_PASSWORD}
     restart: always
 
 networks:
