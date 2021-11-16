@@ -1,5 +1,5 @@
 #stage1
-FROM node:alpine3.14 as builder
+FROM node:17.1.0 as builder
 WORKDIR /usr/app
 COPY package*.json ./
 COPY requirements.txt ./
@@ -7,7 +7,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 #stage 2
-FROM node:alpine3.14
+FROM node:17.1.0
 WORKDIR /usr/app
 COPY package*.json ./
 ADD python-utils ./python-utils/
