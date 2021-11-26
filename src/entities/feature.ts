@@ -5,7 +5,8 @@ import { ObjectId } from "mongodb";
 @Directive("@cacheControl(maxAge: 600)")
 @ObjectType()
 export class Feature {
-  @Field()
+  
+  @prop()
   readonly _id!: ObjectId;
 
   @prop()
