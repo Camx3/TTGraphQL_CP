@@ -167,7 +167,7 @@ export default class GenomeResolver {
       });
 
       if(locus_first_index === -1 || locus_last_index === -1){
-        throw new ApolloError('Start or End Locus tag doesnt exist in the genome','LOCUS_TAG_NOT_FOUND')
+        throw new ApolloError('Locus tag doesnt exist in the genome','LOCUS_TAG_NOT_FOUND')
       }
       let re = /(\d+)([\)\(]*$)/; //match[1]
       var lower_count = 0;
