@@ -154,7 +154,7 @@ export default class GenomeResolver {
     let isIndexReady = false;
     if(genome){
       genome.features.forEach((value,index) =>{
-        if(value.locus_tag === locus_tag){
+        if(value.locus_tag === locus_tag || value.locus_tag === locus_tag.toLowerCase() || value.locus_tag === locus_tag.toUpperCase() ){
           if(!isIndexReady){
             locus_first_index = index;
             isIndexReady = true;
