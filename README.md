@@ -34,6 +34,7 @@ Disclaimer: https://www.ncbi.nlm.nih.gov/home/about/policies/
 ├── .gitignore                 # Standard gitignore file
 ├── package.json               # Node module dependencies
 ├── README.md                  # Simple readme file
+├── schema.graphql             # GraphQL API schema
 └── tsconfig.json              # TypeScript compiler options
 ```
 
