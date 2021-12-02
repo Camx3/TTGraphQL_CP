@@ -46,12 +46,12 @@ export default class GenomeService {
         const idlist = response.data.esearchresult.idlist;
         if( idlist.length !== 0){
           const id: string = idlist[0];
-          await client.hget("id:"+id,"status").then( (obj) =>{
+          await client.hget("pid:"+id,"status").then( (obj) =>{
             if(obj === "processing"){              
               status = "2";
             }else{
-              client.hsetnx("id:"+id,"status","processing");
-              client.expire("id:"+id,2000);
+              client.hsetnx("pid:"+id,"status","processing");
+              client.expire("pid:"+id,2000);
               status = "3";
               PythonShell.run('CreateGenome.py', {scriptPath: pythonScriptPath,args:[id]}, async (err,result) =>{
                 if(err){
@@ -95,12 +95,12 @@ export default class GenomeService {
               const genomeId = nuccoreIdList[0];
               genome = await this.genomeModel.getByGenomeId(genomeId);
               if(genome === null){
-                await client.hget("id:"+genomeId,"status").then( (obj) =>{
+                await client.hget("pid:"+genomeId,"status").then( (obj) =>{
                   if(obj === "processing"){              
                     status = "2";
                   }else{
-                    client.hsetnx("id:"+genomeId,"status","processing");
-                    client.expire("id:"+genomeId,2000);
+                    client.hsetnx("pid:"+genomeId,"status","processing");
+                    client.expire("pid:"+genomeId,2000);
                     status = "3";
                     PythonShell.run('CreateGenome.py', {scriptPath: pythonScriptPath,args:[genomeId]}, async (err,result) =>{
                       if(err){
@@ -141,12 +141,12 @@ export default class GenomeService {
         const idlist = response.data.esearchresult.idlist
         if( idlist.length !== 0){
           let id = idlist[0];
-          await client.hget("id:"+id,"status").then( (obj) =>{
+          await client.hget("pid:"+id,"status").then( (obj) =>{
             if(obj === "processing"){              
               status = "2";
             }else{
-              client.hsetnx("id:"+id,"status","processing");
-              client.expire("id:"+id,2000);
+              client.hsetnx("pid:"+id,"status","processing");
+              client.expire("pid:"+id,2000);
               status = "3";
               PythonShell.run('CreateGenome.py', {scriptPath: pythonScriptPath,args:[id]}, async (err,result) =>{
                 if(err){
