@@ -1,0 +1,107 @@
+type AssemblyInfo {
+  assembly_accession: String
+  latest_assembly_accession: String
+  taxid: String
+  specie: String
+  specieTaxId: String
+  submitter: String
+  ftp_rpt: String
+}
+
+type BioprojectInfo {
+  project_accession: String
+  project_type: String
+  project_target_material: String
+  project_target_scope: String
+  registration_date: String
+  project_name: String
+  project_title: String
+  project_description: String
+  relevance_agricultural: String
+  relevance_medical: String
+  relevance_industrial: String
+  relevance_environmental: String
+  relevance_evolution: String
+  relevance_other: String
+  relevance_model: String
+  organism_name: String
+  organism_strain: String
+  organism_label: String
+  sequencing_status: String
+  submitter: String
+  supergroup: String
+}
+
+type BiosampleInfo {
+  title: String
+  accession: String
+  publication_date: String
+  organization: String
+  organism: String
+}
+
+# The javascript `Date` as string. Type represents date and time as the ISO Date string.
+scalar DateTime
+
+type Feature {
+  _id: ObjectId!
+  location: String!
+  key: String
+  mobile_element_type: String
+  locus_tag: String
+  gene: String
+  product: String
+  translation: String
+  genome_accession: String!
+}
+
+type Genome {
+  _id: String!
+  features: [Feature!]!
+  definition: String
+  gId: String!
+  assembly_link: String
+  bioproject_link: String
+  biosample_link: String
+  pubmedIds: [String!]
+  assembly_info: AssemblyInfo
+  biosample_info: BiosampleInfo
+  bioproject_info: BioprojectInfo
+  pubmed_info: [PubmedInfo!]
+}
+
+# Mongo object id scalar type
+
+scalar ObjectId
+
+type PubmedInfo {
+  pub_date: String
+  source: String
+  title: String
+  issn: String
+  essn: String
+  pub_type: String
+  record_status: String
+}
+
+type Query {
+  getFeature(id: ObjectId!): Feature!
+  getGenomebyAccession(
+    locus_end: String!
+    locus_start: String!
+    accession: String!
+  ): Genome
+  getGenomebyAssembly(
+    locus_end: String!
+    locus_start: String!
+    assembly_accession: String!
+  ): Genome
+  getGenomebyLocus(
+    lower_limit: Float!
+    upper_limit: Float!
+    locus_tag: String!
+    assembly_accession: String
+  ): Genome
+}
+
+
