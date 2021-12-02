@@ -30,7 +30,7 @@ services:
     restart: always
   # Redis container
   redis:
-    image: "redis:alpine3.14"
+    image: "redis:6.2.6"
     container_name: redis
     networks:
       - graphql-app-network
