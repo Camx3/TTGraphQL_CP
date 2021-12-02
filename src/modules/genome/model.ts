@@ -33,7 +33,7 @@ export default class GenomeModel {
 
   @Cacheable({
     cacheKey: GenomeModel.setCacheKey,
-    hashKey: 'id',
+    hashKey: 'gid',
     client: clientAdapter,
     ttlSeconds: 1800,
   })
