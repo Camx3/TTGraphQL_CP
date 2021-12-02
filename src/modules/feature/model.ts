@@ -16,9 +16,14 @@ export default class FeatureModel {
     
     var lowercase_locus = locus.toLowerCase()
     var uppercase_locus = locus.toUpperCase()
-    const feature = await FeatureMongooseModel.findOne({locus_tag: lowercase_locus}).lean().exec();
+    const feature = await FeatureMongooseModel.findOne({locus_tag: locus}).lean().exec();
     if(feature === null){
-      return FeatureMongooseModel.findOne({locus_tag: uppercase_locus}).lean().exec();
+      const feature_lc = await FeatureMongooseModel.findOne({locus_tag: lowercase_locus}).lean().exec();
+      if( feature_lc === null){
+        return FeatureMongooseModel.findOne({locus_tag: uppercase_locus}).lean().exec();
+      }else{
+        return feature_lc;
+      }
     }
     return feature;
   }
